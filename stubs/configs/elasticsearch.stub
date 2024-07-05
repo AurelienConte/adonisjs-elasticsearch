@@ -1,0 +1,15 @@
+{{{
+  exports({ to: app.configPath('elasticsearch.ts') })
+}}}
+
+import env from '#start/env'
+import { defineConfig } from 'adonis-clickhouse'
+import { InferConnections } from 'adonis-clickhouse/types'
+
+const elasticsearchConfig = defineConfig({
+  connection: 'main',
+  connections: {
+  },
+})
+
+export default elasticsearchConfig

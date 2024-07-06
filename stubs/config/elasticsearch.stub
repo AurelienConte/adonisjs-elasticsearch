@@ -3,13 +3,14 @@
 }}}
 
 import env from '#start/env'
-import { defineConfig } from 'adonis-clickhouse'
-import { InferConnections } from 'adonis-clickhouse/types'
+import { defineConfig } from 'adonis-elasticsearch'
 
 const elasticsearchConfig = defineConfig({
   connection: 'main',
   connections: {
-    node:  env.get('ELASTICSEARCH_NODE'),
+    main: {
+      node:  env.get('ELASTICSEARCH_NODE'),
+    }
   },
 })
 

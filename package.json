@@ -1,6 +1,6 @@
 {
   "name": "@aurelien-conte/adonisjs-elasticsearch",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "description": "Elasticsearch provider for AdonisJS",
   "main": "build/index.js",

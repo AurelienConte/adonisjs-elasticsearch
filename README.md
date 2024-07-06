@@ -5,7 +5,7 @@
   <h3>ElasticSearch for AdonisJS v6</h3>
   <p>A third-party wrapper for `@elastic/elasticsearch` in AdonisJS v6.</p>
   <a href="https://www.npmjs.com/package/adonis-elasticsearch">
-    <img src="https://img.shields.io/npm/v/adonis-clickhouse.svg?style=for-the-badge&logo=npm" />
+    <img src="https://img.shields.io/npm/v/adonisjs-elasticsearch.svg?style=for-the-badge&logo=npm" />
   </a>
   <img src="https://img.shields.io/npm/l/adonis-elasticsearch?color=blueviolet&style=for-the-badge" />
   <img src="https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript" />
@@ -39,7 +39,7 @@ await app.container.make('elasticsearch')
 ```
 or
 ```typescript
-import clickhouse from 'adonis-elasticsearch/services/main'
+import elasticsearch from 'adonis-elasticsearch/services/main'
 ```
 
 The way same as `@adonisjs/redis`.

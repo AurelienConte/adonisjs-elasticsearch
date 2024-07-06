@@ -4,10 +4,10 @@
   <img src="https://imgur.com/NWRtoJ0.png" width="50%" alt="AdonisJS Elasticsearch" />
   <h3>ElasticSearch for AdonisJS v6</h3>
   <p>A third-party wrapper for `@elastic/elasticsearch` in AdonisJS v6.</p>
-  <a href="https://www.npmjs.com/package/adonis-elasticsearch">
-    <img src="https://img.shields.io/npm/v/adonisjs-elasticsearch.svg?style=for-the-badge&logo=npm" />
+  <a href="https://www.npmjs.com/package/@aurelien-conte/adonisjs-elasticsearch">
+    <img src="https://img.shields.io/npm/v/@aurelien-conte/adonisjs-elasticsearch.svg?style=for-the-badge&logo=npm" />
   </a>
-  <img src="https://img.shields.io/npm/l/adonis-elasticsearch?color=blueviolet&style=for-the-badge" />
+  <img src="https://img.shields.io/npm/l/@aurelien-conte/adonisjs-elasticsearch?color=blueviolet&style=for-the-badge" />
   <img src="https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript" />
 </div>
 

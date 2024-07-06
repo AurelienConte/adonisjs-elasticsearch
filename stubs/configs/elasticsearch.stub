@@ -9,6 +9,7 @@ import { InferConnections } from 'adonis-clickhouse/types'
 const elasticsearchConfig = defineConfig({
   connection: 'main',
   connections: {
+    node:  env.get('ELASTICSEARCH_NODE'),
   },
 })
 

@@ -1,16 +1,65 @@
 # AdonisJS Elasticsearch
 
-## Introduction 
+<div align="center">
+  <img src="https://imgur.com/NWRtoJ0.png" width="50%" alt="AdonisJS Elasticsearch" />
+  <h3>ElasticSearch for AdonisJS v6</h3>
+  <p>A third-party wrapper for `@elastic/elasticsearch` in AdonisJS v6.</p>
+  <a href="https://www.npmjs.com/package/adonis-elasticsearch">
+    <img src="https://img.shields.io/npm/v/adonis-clickhouse.svg?style=for-the-badge&logo=npm" />
+  </a>
+  <img src="https://img.shields.io/npm/l/adonis-elasticsearch?color=blueviolet&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript" />
+</div>
 
-This package is a plugin for AdonisJS to provide a simple way to use Elasticsearch with AdonisJS.
+> [!CAUTION]
+> This package is not compatible with AdonisJS v5.
 
-## Installation 
+<del>Copied a lot from</del> Inspired a lot by [adonisjs-clickhouse](https://github.com/shiny/adonis-clickhouse). 
 
-@TODO
+## Installation
 
-## Usage
+```bash
+node ace install adonis-elasticsearch
+```
 
-@TODO
+## Configuration
+
+You can change it in `config/elasticsearch.ts`, it's all same with `new Client` Configuration.
+
+## Environment Variables
+| Variable             | Description         | Default Value  |
+|----------------------|---------------------|----------------|
+| `ELASTICSEARCH_NODE` | Url to the database | `http://elasticsearch:9200` |
+
+## How to import
+
+As it is a container service, you can init it by
+```typescript
+await app.container.make('elasticsearch')
+```
+or
+```typescript
+import clickhouse from 'adonis-elasticsearch/services/main'
+```
+
+The way same as `@adonisjs/redis`.
+
+## Multi Database Instances
+You can config the multi databases and use `manager` to connect it.
+
+```typescript
+import { manager } from 'adonis-elasticsearch/services/main'
+
+// Change main to the name you defined.
+const client = manager.connect('main')
+await client.search({
+    /* QueryParams */
+})
+```
+
+## Documentation
+
+See [Offical ElasticSearch JS Library](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)
 
 ## Credits
 

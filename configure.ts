@@ -15,17 +15,17 @@ export async function configure(command: Configure) {
 	 * Add environment variables
 	 */
 	await codemods.defineEnvVariables({
-		// @TODO: add envs
+		ELASTICSEARCH_NODE: 'https://localhost:9200',
 	})
 
 	/**
 	 * Validate environment variables
 	 */
-	// await codemods.defineEnvValidations({
-	// 	variables: {
-	// 		// @TODO: add envs validations
-	// 	},
-	// })
+	await codemods.defineEnvValidations({
+		variables: {
+			ELASTICSEARCH_NODE: `Env.schema.string.optional({ format: 'url', tld: false })`,
+		},
+	})
 
 	/**
 	 * Register provider

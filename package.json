@@ -4,7 +4,7 @@
   "description": "Elasticsearch provider for AdonisJS",
   "main": "build/index.js",
   "dependencies": {
-    "@elastic/elasticsearch": "^8.14.0",
+    "@elastic/elasticsearch": "^8.14.0"
   },
   "peerDependencies": {
     "@adonisjs/core": "^6.12.1"

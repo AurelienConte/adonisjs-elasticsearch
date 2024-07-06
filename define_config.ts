@@ -17,13 +17,13 @@ export function defineConfig<T extends ElasticSearchConnectionList>(
 
 	if (!config.connections) {
 		throw new RuntimeException(
-			'Missing "connections" property in the clickhouse config file'
+			'Missing "connections" property in the elasticsearch config file'
 		);
 	}
 
 	if (!config.connection) {
 		throw new RuntimeException(
-			'Missing "connection" property in clickhouse config. Specify a default connection to use'
+			'Missing "connection" property in elasticsearch config. Specify a default connection to use'
 		);
 	}
 
@@ -31,7 +31,7 @@ export function defineConfig<T extends ElasticSearchConnectionList>(
 		throw new RuntimeException(
 			`Missing "connections.${String(
 				config.connection
-			)}". It is referenced by the "default" clickhouse connection`
+			)}". It is referenced by the "default" elasticsearch connection`
 		);
 	}
 	return config;

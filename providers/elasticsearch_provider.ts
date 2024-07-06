@@ -1,5 +1,5 @@
-import {ApplicationService} from "@adonisjs/core/build/src/types";
-import {ElasticSearchConfig} from "../types";
+import {ApplicationService} from "@adonisjs/core/types";
+import {ElasticSearchConfig} from "../types.js";
 import { Client } from '@elastic/elasticsearch';
 
 declare module '@adonisjs/core/types' {
@@ -15,7 +15,7 @@ export default class ElasticsearchProvider {
 		this.app.container.singleton('elasticsearch', async () => {
 			const config = this.app.config.get<ElasticSearchConfig>('elasticsearch')
 			if (config.connections[config.connection]) {
-				return new Client(config.connection[config.connection]);
+				return new Client(config.connections[config.connection]);
 			} else {
 				throw new Error('ElasticSearch Config Malformed')
 			}

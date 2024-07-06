@@ -1,6 +1,6 @@
 import type Configure from '@adonisjs/core/commands/configure'
 import pkg from './package.json'
-import { stubsRoot } from './stubs'
+import { stubsRoot } from './stubs/index.js'
 
 const packageName = pkg.name
 
@@ -31,7 +31,7 @@ export async function configure(command: Configure) {
 	 * Register provider
 	 * @TODO: Fix the linting error here
 	 */
-	await codemods.updateRcFile((rcFile) => {
+	await codemods.updateRcFile((rcFile: any) => {
 		rcFile.addProvider(`${packageName}/providers/elasticsearch_provider`)
 	})
 }

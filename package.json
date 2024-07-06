@@ -1,6 +1,6 @@
 {
-  "name": "adonis-elasticsearch",
-  "version": "0.0.1",
+  "name": "@aurelien-conte/adonisjs-elasticsearch",
+  "version": "1.0.0",
   "type": "module",
   "description": "Elasticsearch provider for AdonisJS",
   "main": "build/index.js",
@@ -63,5 +63,9 @@
     "@japa/expect-type": "^2.0.2",
     "@japa/runner": "^3.1.4",
     "@types/node": "^20.14.9"
+  },
+  "types": "./build/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/AurelienConte/adonis-elasticsearch/issues"
   }
 }

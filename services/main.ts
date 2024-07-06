@@ -1,11 +1,11 @@
-import app from "@adonisjs/core/services/app";
 import {ElasticSearchConnectionList} from "../types.js";
 import {Client} from "@elastic/elasticsearch";
+import app from "@adonisjs/core/services/app";
 
 let elasticsearch: Client;
 let manager: ElasticSearchManager;
 
-class ElasticSearchManager {
+export class ElasticSearchManager {
 	connect<ConnectionName extends keyof ElasticSearchConnectionList>(connectionName: ConnectionName) {
 		const elasticsearch = app.config.get<{connections: ElasticSearchConnectionList}>('elasticsearch');
 		return new Client(elasticsearch.connections[connectionName]);

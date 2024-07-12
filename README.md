@@ -14,12 +14,12 @@
 > [!CAUTION]
 > This package is not compatible with AdonisJS v5.
 
-<del>Copied a lot from</del> Inspired a lot by [adonisjs-clickhouse](https://github.com/shiny/adonis-clickhouse). 
+<del>Copied a lot from</del> Inspired a lot by [adonis-clickhouse](https://github.com/shiny/adonis-clickhouse). 
 
 ## Installation
 
 ```bash
-node ace install adonis-elasticsearch
+node ace install @aurelien-conte/adonisjs-elasticsearch
 ```
 
 ## Configuration
@@ -39,7 +39,7 @@ await app.container.make('elasticsearch')
 ```
 or
 ```typescript
-import elasticsearch from 'adonis-elasticsearch/services/main'
+import elasticsearch from '@aurelien-conte/adonisjs-elasticsearch/services/main'
 ```
 
 The way same as `@adonisjs/redis`.
@@ -48,7 +48,7 @@ The way same as `@adonisjs/redis`.
 You can config the multi databases and use `manager` to connect it.
 
 ```typescript
-import { manager } from 'adonis-elasticsearch/services/main'
+import { manager } from '@aurelien-conte/adonisjs-elasticsearch/services/main'
 
 // Change main to the name you defined.
 const client = manager.connect('main')

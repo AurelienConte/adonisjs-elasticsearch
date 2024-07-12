@@ -63,4 +63,4 @@ See [Offical ElasticSearch JS Library](https://www.elastic.co/guide/en/elasticse
 
 ## Credits
 
-- [adonisjs-clickhouse](https://github.com/shiny/adonis-clickhouse) ( The code is heavily inspired by this package, like copied )
+- [adonis-clickhouse](https://github.com/shiny/adonis-clickhouse) ( The code is heavily inspired by this package, like copied )

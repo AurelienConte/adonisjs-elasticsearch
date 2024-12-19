@@ -19,7 +19,7 @@
 ## Installation
 
 ```bash
-node ace install @aurelien-conte/adonisjs-elasticsearch
+node ace add @aurelien-conte/adonisjs-elasticsearch
 ```
 
 ## Configuration

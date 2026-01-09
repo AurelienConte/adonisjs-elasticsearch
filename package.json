@@ -65,6 +65,7 @@
     "@japa/runner": "^3.1.4",
     "@types/node": "^20.19.27",
     "copyfiles": "^2.4.1",
+    "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },

@@ -62,7 +62,7 @@
   "devDependencies": {
     "@japa/expect": "^3.0.7",
     "@japa/expect-type": "^2.0.4",
-    "@japa/runner": "^4.5.0",
+    "@japa/runner": "^5.3.0",
     "@swc/core": "^1.15.8",
     "@types/node": "^25.0.3",
     "copyfiles": "^2.4.1",

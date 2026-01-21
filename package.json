@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@adonisjs/tsconfig": "^1.4.1",
-    "@elastic/elasticsearch": "^8.19.1"
+    "@elastic/elasticsearch": "^9.2.0"
   },
   "peerDependencies": {
     "@adonisjs/core": "^6.12.1"
@@ -62,7 +62,7 @@
   "devDependencies": {
     "@japa/expect": "^3.0.7",
     "@japa/expect-type": "^2.0.4",
-    "@japa/runner": "^3.1.4",
+    "@japa/runner": "^4.5.0",
     "@swc/core": "^1.15.8",
     "@types/node": "^25.0.3",
     "copyfiles": "^2.4.1",

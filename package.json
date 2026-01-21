@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@adonisjs/tsconfig": "^1.4.1",
-    "@elastic/elasticsearch": "^8.19.1"
+    "@elastic/elasticsearch": "^9.2.0"
   },
   "peerDependencies": {
     "@adonisjs/core": "^6.12.1"
